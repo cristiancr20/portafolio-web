@@ -1,0 +1,44 @@
+.proyecto_card{
+    border: 1px solid crimson;
+    margin: 20px;
+    border-radius: 15px;
+    background: #0c0b0b7c;
+}
+
+.proyecto_card .title{
+    text-align: center;
+}
+
+.informacion_card{
+    display: block;
+    text-align: center;
+}
+
+.imagen_card{
+    margin:auto;
+    width: 250px;
+    height: 150px;
+}
+.imagen_card img {
+    width: 100%;
+    height: 100%;
+}
+
+.info_card{
+    font-size: 20px;
+    margin: auto;
+}
+
+.info_card p{
+    padding: 20px ;
+    font-weight: 100;
+}
+
+.info_card a{
+    text-decoration: none;
+    color: crimson;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    padding: 5px;
+}

@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../images/ccode.jpg)no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* .content_me{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.content_me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.content_me .content_me__info {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.info__me {
+  font-size: 20px;
+}
+
+.info__me .datos {
+  margin: 20px;
+}
+
+.info__me .datos p {
+  font-weight: 100;
+}
+
+.info__me .datos p:nth-child(1) {
+  font-size: 55px;
+}
+
+.info__me .datos p:nth-child(1) span {
+  color: crimson;
+  font-weight: bold;
+}
+
+.red_social {
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.red_social .icon a {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  font-size: 30px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.red_social .icon a:hover {
+  color: crimson;
+  transform: rotate(20deg);
+}
+
+.imagen_me {
+  display: flex;
+  align-items: center;
+
+}
+
+.imagen_me img {
+  width: 50%;
+  margin: auto;
+}
+
+@media screen and (max-width: 650px) {
+  .content_me .content_me__info {
+    display: flex;
+    flex-direction: column;
+  }
+}
