@@ -13,7 +13,7 @@ function Navbar() {
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
-
+    
     const onMouseEnter = () => {
         if (window.innerWidth < 960) {
             setDropdown(false);
@@ -29,6 +29,7 @@ function Navbar() {
             setDropdown(false);
         }
     };
+    
     return (
         <>
             <IconContext.Provider value={{ color: '#fff' }}>
@@ -50,8 +51,8 @@ function Navbar() {
                                 </Link>
                             </li>
                             <li className='nav-item'
-                                onMouseEnter={onMouseEnter}
-                                onMouseLeave={onMouseLeave}
+                                 onMouseEnter={onMouseEnter}
+                                onMouseLeave={onMouseLeave} 
                             >
                                 <Link to='/proyectos/html' className='nav-links' onClick={closeMobileMenu}>
                                     Proyectos <FaAngleDown />

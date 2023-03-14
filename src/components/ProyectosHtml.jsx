@@ -1,5 +1,5 @@
 import React from 'react'
-import './ProyectosHtml.css'
+import './Proyectos.css'
 
 import img_semillitas from '../images/semillitas.png'
 import img_websiteCF from '../images/websiteCF.png'
@@ -15,11 +15,11 @@ import img_contact from '../images/contact.png'
 
 import Card from './Card'
 
-function Proyectos() {
+function ProyectosHtml() {
     return (
         <>
             <div className='content'>
-                <h1 data-aos="fade-down">Diseños Sitios Web</h1>
+                <h1 data-aos="fade-down">Diseños Sitios Html</h1>
                 <div className='cont-proyectos'>
 
                     <div className='proyecto'>
@@ -108,4 +108,4 @@ function Proyectos() {
     )
 }
 
-export default Proyectos
+export default ProyectosHtml
