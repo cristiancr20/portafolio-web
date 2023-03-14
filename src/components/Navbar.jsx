@@ -25,8 +25,7 @@ function Navbar() {
                         </div>
 
                         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                            <li className='nav-item'
-                            data-aos="flip-down">
+                            <li className='nav-item'>
                                 <Link to='/Portfolio' className='nav-links' onClick={closeMobileMenu}>
                                     Inicio
                                 </Link>

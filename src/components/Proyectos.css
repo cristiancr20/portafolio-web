@@ -5,12 +5,13 @@
     box-sizing: border-box;
     
 }
-body{
+/* body{
     background: url(../images/ccode.jpg)no-repeat center center fixed;
     background-size: cover;
   }
-
+ */
 .content{
+    background: #222;
     padding: 20px 0;
     color: #fff;
 }

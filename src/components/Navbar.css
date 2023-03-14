@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 .navbar {
-    background: #222;
+    background: #000  ;
     
     height: 80px;
     display: flex;

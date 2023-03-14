@@ -46,7 +46,7 @@ function Sobremi() {
                             </div>
                         </div>
                     </div>
-                    <div className='imagen_me' data-aos="fade-left">
+                    <div className='imagen_me' >
                         <img src={Cristian} alt='imagen del creador'></img>
                     </div>
                 </div>
