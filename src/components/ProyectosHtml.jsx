@@ -1,5 +1,5 @@
 import React from 'react'
-import './Proyectos.css'
+import './ProyectosHtml.css'
 
 import img_semillitas from '../images/semillitas.png'
 import img_websiteCF from '../images/websiteCF.png'

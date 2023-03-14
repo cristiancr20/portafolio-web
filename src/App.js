@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import {BrowserRouter as Router, Route, Routes,} from 'react-router-dom'
 import Inicio from "./components/Inicio";
-import Proyectos from "./components/Proyectos";
+import Proyectos from "./components/ProyectosHtml";
 import Sobremi from "./components/Sobremi";
 
 function App() {
@@ -11,8 +11,8 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/" element ={<Inicio/>}/>
-        <Route path="/proyectos" element= {<Proyectos/>}/>
-        <Route path="/sobre_mi" element= {<Sobremi/>}/>
+        <Route path="/proyectos/html" element= {<Proyectos/>}/>
+        <Route path="/sobre/mi" element= {<Sobremi/>}/>
       </Routes>
     </Router>
   );
