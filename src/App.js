@@ -6,6 +6,7 @@ import ProyectosHtml from "./components/pages/ProyectosHtml";
 import ProyectosReact from "./components/pages/ProyectosReact";
 import Proyectos from "./components/pages/Categorias";
 import Sobremi from "./components/pages/Sobremi";
+import NotFound from "./components/pages/NotFound";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/proyectos/html" element= {<ProyectosHtml/>}/>
         <Route path="/proyectos/react" element= {<ProyectosReact/>}/>
         <Route path="/sobre/mi" element= {<Sobremi/>}/>
+        <Route path="*" element ={<NotFound/>}/>
       </Routes>
     </Router>
   );
