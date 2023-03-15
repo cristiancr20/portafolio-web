@@ -19,9 +19,6 @@ function Card(props) {
                         <a href={props.enlaceSitio}>
                             {props.botonSitio}
                         </a>
-                        <a href={props.enlaceCodigo}>
-                            {props.botonCodigo} 
-                        </a>
                     </div>
 
 

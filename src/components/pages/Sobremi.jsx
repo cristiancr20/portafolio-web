@@ -1,9 +1,8 @@
 import React from 'react'
 import './Sobremi.css'
-import Cristian from '../images/cristian.png'
+import Cristian from '../../images/cristian.png'
 import { FaGithub, FaInstagram, FaTiktok, FaYoutube, FaCodepen, FaLinkedin } from "react-icons/fa";
 
-import code from '../images/ccode.jpg';
 
 function Sobremi() {
     return (

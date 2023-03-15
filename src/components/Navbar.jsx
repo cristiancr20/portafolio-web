@@ -4,31 +4,12 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 import { IconContext } from 'react-icons/lib';
 
-import Dropdown from './pages/Dropdown';
-
 
 function Navbar() {
     const [click, setClick] = useState(false);
-    const [dropdown, setDropdown] = useState(false);
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
-    
-    const onMouseEnter = () => {
-        if (window.innerWidth < 960) {
-            setDropdown(false);
-        } else {
-            setDropdown(true);
-        }
-    };
-
-    const onMouseLeave = () => {
-        if (window.innerWidth < 960) {
-            setDropdown(false);
-        } else {
-            setDropdown(false);
-        }
-    };
     
     return (
         <>
@@ -50,14 +31,11 @@ function Navbar() {
                                     Inicio
                                 </Link>
                             </li>
-                            <li className='nav-item'
-                                 onMouseEnter={onMouseEnter}
-                                onMouseLeave={onMouseLeave} 
+                            <li className='nav-item' 
                             >
-                                <Link to='/proyectos/html' className='nav-links' onClick={closeMobileMenu}>
-                                    Proyectos <FaAngleDown />
+                                <Link to='/proyectos' className='nav-links' onClick={closeMobileMenu}>
+                                    Proyectos
                                 </Link>
-                                {dropdown && <Dropdown />}
                             </li>
                             <li className='nav-item'>
                                 <Link to='/sobre/mi' className='nav-links' onClick={closeMobileMenu}>

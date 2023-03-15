@@ -1,7 +1,6 @@
 import React from 'react'
 import './Inicio.css'
 import Typewriter from 'typewriter-effect'
-import code from '../images/ccode.jpg';
 
 
 function Inicio() {

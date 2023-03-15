@@ -1,19 +1,19 @@
 import React from 'react'
 import './Proyectos.css'
 
-import img_semillitas from '../images/semillitas.png'
-import img_websiteCF from '../images/websiteCF.png'
-import img_cineplus from '../images/cinePlus.jpg'
-import img_juegocalamar from '../images/juegocalamar.jpg'
-import img_tattosalon from '../images/tatto-salon.jpg'
-import img_starbucks from '../images/starbucks.png'
-import img_audifonos from '../images/audifonos.PNG'
-import img_tesla from '../images/tesla.PNG'
-import img_login from '../images/login.png'
-import img_contact from '../images/contact.png'
+import img_semillitas from '../../images/semillitas.png'
+import img_websiteCF from '../../images/websiteCF.png'
+import img_cineplus from '../../images/cinePlus.jpg'
+import img_juegocalamar from '../../images/juegocalamar.jpg'
+import img_tattosalon from '../../images/tatto-salon.jpg'
+import img_starbucks from '../../images/starbucks.png'
+import img_audifonos from '../../images/audifonos.PNG'
+import img_tesla from '../../images/tesla.PNG'
+import img_login from '../../images/login.png'
+import img_contact from '../../images/contact.png'
 
 
-import Card from './Card'
+import Card from '../Card'
 
 function ProyectosHtml() {
     return (
