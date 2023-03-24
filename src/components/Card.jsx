@@ -6,7 +6,7 @@ import './Card.css'
 function Card(props) {
     return (
         <>
-            <div className='proyecto_card' data-aos="fade-up">
+            <a className='proyecto_card' data-aos="fade-up"  href={props.enlaceSitio}>
                 <div className='title'>{props.title}</div>
 
                 <div className='informacion_card'>
@@ -16,14 +16,9 @@ function Card(props) {
 
                     <div className='info_card'>
                         <p>{props.info}</p>
-                        <a href={props.enlaceSitio}>
-                            {props.botonSitio}
-                        </a>
                     </div>
-
-
                 </div>
-            </div>
+            </a>
         </>
     )
 }
