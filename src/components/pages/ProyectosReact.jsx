@@ -17,9 +17,6 @@ function ProyectosReact() {
 
                         <Card title="Bloc de notas"
                             img={img_blocnotas}
-                            info="Página web de un bloc de notas incluye un login"
-
-                            /* Enlace del sitio web */
                             enlaceSitio="https://react-bloc-notas.vercel.app/"
                             botonSitio="Visitar Sitio"
                         />
