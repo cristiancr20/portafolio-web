@@ -10,7 +10,7 @@ function Categorias() {
         <>
             <div className="categorias">
                 <CardCategorias categoria="proyectos/html" icon={<FaHtml5 />} title="Html" descripcion="Lenguaje de Marcado de Hipertexto" />
-                <CardCategorias categoria="proyectos/react" icon={<FaReact />} title="React" descripcion="Biblioteca de creación de interaces  de JavaScript" />
+                <CardCategorias categoria="proyectos/react" icon={<FaReact />} title="React" descripcion="Biblioteca de creación de interfaces de JavaScript" />
             </div>
         </>
     )
