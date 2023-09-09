@@ -20,9 +20,9 @@ function App() {
         {/*<Route path="/login" element ={<Login/>}/>*/}
 
         {/* RUTAS DE USER NORMAL*/}
-        <Route path="/proyectos" element= {<Proyectos/>}/>
-        <Route path="/proyectos/html" element= {<ProyectosHtml/>}/>
-        <Route path="/proyectos/react" element= {<ProyectosReact/>}/>
+        <Route path="/categorias" element= {<Proyectos/>}/>
+        <Route path="/categorias/html" element= {<ProyectosHtml/>}/>
+        <Route path="/categorias/react" element= {<ProyectosReact/>}/>
         <Route path="/sobre/mi" element= {<Sobremi/>}/>
         <Route path="*" element ={<NotFound/>}/>
       </Routes>
