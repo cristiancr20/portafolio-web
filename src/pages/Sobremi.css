@@ -31,7 +31,8 @@
 }
 
 .info__me .datos p {
-  font-weight: 100;
+  font-weight: 500;
+  margin: 3px;
 }
 
 .info__me .datos p:nth-child(1) {
@@ -79,5 +80,22 @@
   .content_me .content_me__info {
     display: flex;
     flex-direction: column;
+  }
+
+  .info__me .datos p:nth-child(1) {
+    font-size: 55px;
+    text-align: center;
+  }
+
+  .red_social {
+    width: 100%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .red_social div {
+    margin: 10px 0;
+    text-align: center;
   }
 }

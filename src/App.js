@@ -1,12 +1,13 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import {BrowserRouter as Router, Route, Routes,} from 'react-router-dom'
-import Inicio from "./components/pages/Inicio";
-import ProyectosHtml from "./components/pages/ProyectosHtml";
-import ProyectosReact from "./components/pages/ProyectosReact";
-import Proyectos from "./components/pages/Categorias";
-import Sobremi from "./components/pages/Sobremi";
-import NotFound from "./components/pages/NotFound";
+import Inicio from "./pages/Inicio";
+import ProyectosHtml from "./pages/ProyectosHtml";
+import ProyectosReact from "./pages/ProyectosReact";
+import Proyectos from "./pages/Categorias";
+import Sobremi from "./pages/Sobremi";
+import NotFound from "./pages/NotFound";
+//import Login from "./admin/Login";
 
 function App() {
   return (
@@ -14,6 +15,11 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/" element ={<Inicio/>}/>
+        {/* RUTAS DE ADMIN*/}
+
+        {/*<Route path="/login" element ={<Login/>}/>*/}
+
+        {/* RUTAS DE USER NORMAL*/}
         <Route path="/proyectos" element= {<Proyectos/>}/>
         <Route path="/proyectos/html" element= {<ProyectosHtml/>}/>
         <Route path="/proyectos/react" element= {<ProyectosReact/>}/>

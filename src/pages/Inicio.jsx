@@ -6,8 +6,8 @@ import Typewriter from 'typewriter-effect'
 function Inicio() {
   return (
     <>
-      <div className='container' >
-        <div className="inicio" >
+      <div className='container mx-auto px-2 w' >
+        <div className="inicio " >
           <div className='typescript' >
             <Typewriter
               options={{
@@ -21,9 +21,9 @@ function Inicio() {
             <div className='inicio_info'>
 
               <div className="titulo" data-aos="zoom-out">
-                <h1>Bienvenido!!</h1>
-                <h1>Soy <span> Cristian Capa </span></h1>
-                <h2>Estudiante de Ingeniería en Computación</h2>
+                <h1 className='text-white'>Bienvenido!!</h1>
+                <h1 className='text-white'>Soy <span> Cristian Capa </span></h1>
+                <h2 className='text-white'>Estudiante de Ingeniería en Computación</h2>
               </div>
 
             </div>

@@ -2,6 +2,7 @@
 .notfound{
     background: #0f0f0f;
     height: 90vh;
+    text-align: center;
     color: #fff;
 }
 
@@ -32,12 +33,6 @@
 }
 
 
-.text{
-    font-size: 75px;
-    font-weight: 100;
-    text-align: center;
-}
-
 @keyframes primero {
     100%{
         color: crimson;
@@ -54,6 +49,43 @@
         
     }
 }
+
+
+.notfound h1{
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.notfound p{
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.notfound .notfound_boton_back {
+    font-size: 20px;
+    background-color: crimson;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 250px;
+    margin: 20px auto;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.notfound .notfound_boton_back_link {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+}
+
+.notfound .notfound_boton_back:hover {
+    text-decoration: none;
+    color: #fff;
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
 
 @media screen and (max-width: 960px) {
 

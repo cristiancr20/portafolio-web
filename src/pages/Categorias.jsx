@@ -1,6 +1,6 @@
 import React from 'react'
 
-import CardCategorias from '../CardCategorias'
+import CardCategorias from '../components/CardCategorias'
 import { FaHtml5, FaReact } from "react-icons/fa";
 
 import './Categorias.css'

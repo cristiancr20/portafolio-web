@@ -1,9 +1,9 @@
 import React from 'react'
 import './Proyectos.css'
 
-import Card from '../Card'
+import Card from '../components/Card'
 
-import img_blocnotas from '../../images/blocnotas.png'
+import img_blocnotas from '../images/blocnotas.png'
 
 
 function ProyectosReact() {
