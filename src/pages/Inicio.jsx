@@ -1,6 +1,7 @@
 import React from 'react'
 import './Inicio.css'
 import Typewriter from 'typewriter-effect'
+import fondo from '../images/fondo_home.svg'
 
 
 function Inicio() {
@@ -17,6 +18,8 @@ function Inicio() {
               }}
             />
           </div>
+          
+
           <div className='inicio_cont'>
             <div className='inicio_info'>
 
@@ -25,9 +28,7 @@ function Inicio() {
                 <h1 className='text-white'>Soy <span> Cristian Capa </span></h1>
                 <h2 className='text-white'>Estudiante de Ingeniería en Computación</h2>
               </div>
-
             </div>
-
           </div>
         </div>
       </div>

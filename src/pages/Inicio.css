@@ -16,8 +16,8 @@
 }
 
 .inicio{
-  background: #0f0f0f;
-
+  /*background: #0f0f0f;*/
+background: url(../images/fondo_home.svg) no-repeat center center/cover;
   height: 100vh;
   display: grid;
   grid-template-rows: 0.5fr 0.5fr;
@@ -54,6 +54,9 @@
   color: crimson;
   font-weight: bold;  
 }
+
+
+
 
 
 @media screen and (max-width: 960px) {

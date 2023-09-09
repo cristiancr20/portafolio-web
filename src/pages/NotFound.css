@@ -1,7 +1,8 @@
 
 .notfound{
-    background: #0f0f0f;
-    height: 90vh;
+/*    background: #0f0f0f;*/
+    background: url('../images/fondo_notfound.svg')no-repeat center center/cover;
+height: 90vh;
     text-align: center;
     color: #fff;
 }

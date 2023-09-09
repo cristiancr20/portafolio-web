@@ -6,7 +6,8 @@
 
 
 .content_me {
-  background: #0f0f0f;
+  /*background: #0f0f0f;*/
+  background: url(../images/fondo_sobremi.svg) no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;

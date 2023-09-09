@@ -69,9 +69,14 @@
     color: #fff;
     display: flex;
     align-items: center;
+    align-content: center;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 15px;
     height: 100%;
+}
+
+.nav-links .icon_link{
+    margin: 0 5px;
 }
 
 .fa-bars {
@@ -106,10 +111,11 @@
     }
 
     .nav-links {
-        text-align: center;
+        display:flex;
+    align-items: center;
+    justify-content: center;
         padding: 2rem;
         width: 100%;
-        display: table;
         transition: all 0.3s ease;
     }
 
@@ -122,6 +128,9 @@
         width: 80%;
         margin: 15px;
         padding: 20px;
+        display:flex;
+    align-items: center;
+    justify-content: center;
     }
 
     .navbar-logo {

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { FaBars, FaTimes, FaAngleDown } from 'react-icons/fa'
+import { FaBars, FaTimes } from 'react-icons/fa'
+import { BiHomeAlt2, BiCategory, BiUser } from "react-icons/bi";
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import { IconContext } from 'react-icons/lib';
@@ -10,7 +11,7 @@ function Navbar() {
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
-    
+
     return (
         <>
             <IconContext.Provider value={{ color: '#fff' }}>
@@ -28,18 +29,17 @@ function Navbar() {
                         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                             <li className='nav-item'>
                                 <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                                    Inicio
+                                    <BiHomeAlt2 className='icon_link'/>  Inicio
                                 </Link>
                             </li>
-                            <li className='nav-item' 
-                            >
+                            <li className='nav-item'>
                                 <Link to='/proyectos' className='nav-links' onClick={closeMobileMenu}>
-                                    Proyectos
+                                    <BiCategory className='icon_link'/> Categorías
                                 </Link>
                             </li>
                             <li className='nav-item'>
                                 <Link to='/sobre/mi' className='nav-links' onClick={closeMobileMenu}>
-                                    Sobre Mi
+                                    <BiUser className='icon_link'/> Sobre Mi
                                 </Link>
                             </li>
                         </ul>
