@@ -33,7 +33,7 @@ function Navbar() {
                                 </Link>
                             </li>
                             <li className='nav-item'>
-                                <Link to='/proyectos' className='nav-links' onClick={closeMobileMenu}>
+                                <Link to='/categorias' className='nav-links' onClick={closeMobileMenu}>
                                     <BiCategory className='icon_link'/> Categorías
                                 </Link>
                             </li>
