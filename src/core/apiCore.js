@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://portafolio-backend-stg3-dev.fl0.io';
 
 export const iniciarSesion = async (user) => {
     try {
