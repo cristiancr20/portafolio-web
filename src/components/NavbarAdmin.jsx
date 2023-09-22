@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { FaBars, FaTimes } from 'react-icons/fa'
-import { BiHomeAlt2, BiCategory, BiUser } from "react-icons/bi";
+import { FaBars, FaTimes, FaRegStickyNote } from 'react-icons/fa'
+import { BiHomeAlt2, BiCategory } from "react-icons/bi";
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import { IconContext } from 'react-icons/lib';
@@ -28,26 +28,18 @@ function Navbar() {
 
                         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                             <li className='nav-item'>
-                                <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                                    <BiHomeAlt2 className='icon_link'/>  Inicio
+                                <Link to='/admin/home' className='nav-links' onClick={closeMobileMenu}>
+                                    <BiHomeAlt2 className='icon_link' />  Inicio
                                 </Link>
                             </li>
+                            
                             <li className='nav-item'>
-                                <Link to='/categorias' className='nav-links' onClick={closeMobileMenu}>
-                                    <BiCategory className='icon_link'/> Categorías
-                                </Link>
-                            </li>
-                            <li className='nav-item'>
-                                <Link to='/sobre/mi' className='nav-links' onClick={closeMobileMenu}>
-                                    <BiUser className='icon_link'/> Sobre Mi
+                                <Link to='/admin/registrar/pagina' className='nav-links' onClick={closeMobileMenu}>
+                                    <FaRegStickyNote className='icon_link' /> Páginas                               
                                 </Link>
                             </li>
 
-                            <button className='nav-item-boton'>
-                                <Link to='/admin/login' className='nav-links-boton' onClick={closeMobileMenu}>
-                                    ADMIN
-                                </Link>
-                            </button>
+
                         </ul>
                     </div>
                 </div>

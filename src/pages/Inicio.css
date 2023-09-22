@@ -12,7 +12,6 @@
   width: 100%;
   margin: auto;
   color: #fff;
-  
 }
 
 .inicio{
@@ -23,7 +22,7 @@ background: url(../images/fondo_home.svg) no-repeat center center/cover;
   grid-template-rows: 0.5fr 0.5fr;
 }
 
-.inicio_cont .inicio_info {
+.inicio_cont .inicio_info{
   text-align: center;
 }
 

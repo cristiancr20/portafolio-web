@@ -3,10 +3,13 @@ import './Sobremi.css'
 import Cristian from '../images/cristian.png'
 import { FaGithub, FaInstagram, FaTiktok, FaYoutube, FaCodepen, FaLinkedin } from "react-icons/fa";
 
+import Navbar from '../components/Navbar'
+
 
 function Sobremi() {
     return (
         <>
+            <Navbar />
             <div className='content_me' >
                 <div className='content_me__info' data-aos="fade-right">
 

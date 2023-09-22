@@ -8,94 +8,102 @@
 }
 
 .container {
-    width: 100%;
-    margin: auto;
-    color: #fff;
-    background: #0f0f0f;
-    
+  width: 100%;
+  margin: auto;
+  color: #fff;
+  background: #0f0f0f;
 }
 
-.login{
-    
-    height: 90vh;
+.login {
+  height: 100vh;
 }
 
-.login_container{
-    height: 90%;
-    width: 50%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.login_container {
+  height: 90%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
-.imagen{
-    width: 50%;
-    height: 70%;
-    padding: 15px;
+.imagen {
+  width: 50%;
+  height: 70%;
+  padding: 15px;
 
 }
 
-.form{
-    border: 2px solid crimson;
-    border-radius: 10px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin: 20px;
+.form {
+  border: 2px solid crimson;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 20px;
 }
 
-.form .form-group{
-    display: flex;
-    flex-direction: column;
+.form .form-group {
+  display: flex;
+  flex-direction: column;
 }
 
-.form label{
-    margin: 10px 0;
-    font-size: 20px;
-    text-align: center;
+.form label {
+  margin: 10px 0;
+  font-size: 20px;
+  text-align: center;
 }
 
-.form input{
-    margin: 10px 0;
-    padding: 10px;
-    border: none;
-    outline: none;
-    border-bottom: 2px solid crimson;
-    background: transparent;
-    color: #fff;
-    font-size: 20px;
+.form input {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid crimson;
+  background: transparent;
+  color: #fff;
+  font-size: 20px;
 }
 
 .button_login {
-    color: white;
-    text-decoration: none;
-    font-size: 25px;
-    border: none;
-    background: none;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  border: none;
+  background: none;
+  font-weight: bold;
 
-    margin: 20px;
-    cursor: pointer;
-  }
-  
-  .button_login::before {
-    margin-left: auto;
-  }
-  
-  .button_login::after, button::before {
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #f44336;
-    display: block;
-    transition: 0.5s;
-  }
-  
-  .button_login:hover::after, button:hover::before {
+  margin: 20px;
+  cursor: pointer;
+}
+
+.button_login::before {
+  margin-left: auto;
+}
+
+.button_login::after,
+.button_login::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  transition: 0.5s;
+}
+
+.button_login:hover::after,
+button:hover::before {
+  width: 100%;
+}
+
+
+@media screen and (max-width: 960px) {
+  .login_container {
     width: 100%;
   }
-
-
+  .form {
+    width: 90%;
+  }
+}

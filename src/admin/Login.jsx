@@ -1,99 +1,103 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Login.css'
-//import { Redirect } from 'react-router-dom'; 
-
 import login from '../images/admin/login.jpg'
+import { iniciarSesion } from '../core/apiCore'
 
-//import {iniciarSesion} from '../core/apiCore'
+const Login = () => {
 
-function Login() {
-/*
     const [values, setValues] = useState({
         email: '',
         password: '',
         error: '',
         loading: false,
-        redirectToReferrer: false
     })
 
-    const { email, password, loading, error, redirectToReferrer } = values;
+    const { email, password, loading, error} = values;
 
-    const handleChange = name => event => {
-        setValues({ ...values, error: false, [name]: event.target.value })
-    }
+    const handleChange = (name) => (event) => {
+        setValues({ ...values, error: "", [name]: event.target.value });
+    };
 
-    const clickSubmit = (event) => {
-        event.preventDefault()
-        setValues({ ...values, error: false, loading: true })
-        iniciarSesion({ email, password }).then(data => {
+    const clickSubmit = async (event) => {
+        event.preventDefault();
+        setValues({ ...values, error: "", loading: true });
+
+        try {
+            const data = await iniciarSesion({ email, password });
             if (data.error) {
-                setValues({ ...values, error: data.error, loading: false })
+                setValues({ ...values, error: data.error, loading: false });
             } else {
-                autenticar(data, () => {
-                    setValues({
-                        ...values,
-                        redirectToReferrer: true
-                    })
-                })
+                console.log("Inicio de sesión exitoso");
+                redirectUser(data.user.rol);
             }
-        })
-    }
+        } catch (error) {
+            setValues({
+                ...values,
+                error: "Hubo un error en el inicio de sesión. Inténtalo de nuevo más tarde.",
+                loading: false,
+            });
+        }
+    };
+
+    const redirectUser = (rol) => {
+        if (rol === "admin") {
+            window.location.href = "/admin/home";
+        } else if (rol === "user") {
+            window.location.href = "/admin";
+        }
+    };
 
     const showError = () => (
-        <div className="alert alert-danger" style={{ display: error ? '' : 'none' }}>
+        <div className={`alerta ${error ? "" : "hidden"}`}>
             {error}
         </div>
-    )
+    );
 
-    const redirectUser = () => {
-        if (redirectToReferrer) {
-            return <Redirect to="/admin/dashboard" />
-        }
-    }*/
+    const singInForm = () => (
+        <div className="login">
+            <div className="login_container">
 
+                {/*<div className="imagen">
+                    <img src={login} alt="logo" />
+    </div>*/}
+                <div className="form">
+                    <form>
+                        <div className="form-group">
+                            <label htmlFor="exampleInputEmail1">Email</label>
+                            <input
+                                onChange={handleChange('email')}
+                                type="email"
+                                placeholder="Enter email"
+                                value={email}
+                            />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="exampleInputPassword1">Password</label>
+                            <input
+                                onChange={handleChange('password')}
+                                type="password"
+                                placeholder="Password"
+                                value={password}
+                            />
+                        </div>
+                    </form>
+                    <button type="submit" className="button_login"  onClick={clickSubmit}>
+                        {loading ? "Cargando.." : "Iniciar Sesión"}
+                    </button>
 
+                </div>
+            </div>
+        </div>
+    );
 
     return (
-        <>
+        
             <div className="container">
-                <div className="login">
-                    <div className="login_container">
-
-                        <div className="imagen">
-                            <img src={login} alt="logo" />
-                        </div>
-                        <div className="form">
-                            <form>
-                                <div className="form-group">
-                                    <label htmlFor="exampleInputEmail1">Email</label>
-                                    <input 
-                                    onChange={handleChange('email')}
-                                    type="email"  
-                                    placeholder="Enter email"
-                                    value={email}
-                                    />
-                                </div>
-                                <div className="form-group">
-                                    <label htmlFor="exampleInputPassword1">Password</label>
-                                    <input 
-                                    onChange={handleChange('password')}
-                                    type="password"  
-                                    placeholder="Password" 
-                                    value={password}
-                                    />
-                                </div>
-                            </form>
-                            <button type="submit" className="button_login" >
-                                {loading ? "Cargando.." : "Iniciar Sesión"}
-                            </button>
-
-                        </div>
-                    </div>
-                </div>
-
+                {showError()}
+                {singInForm()}
             </div>
-        </>
+        
     )
 }
 
-export default Login
+export default Login;

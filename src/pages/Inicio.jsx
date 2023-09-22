@@ -1,13 +1,16 @@
 import React from 'react'
 import './Inicio.css'
 import Typewriter from 'typewriter-effect'
-import fondo from '../images/fondo_home.svg'
+
+import Navbar from '../components/Navbar'
 
 
 function Inicio() {
   return (
     <>
-      <div className='container mx-auto px-2 w' >
+      <Navbar />
+
+      <div className='container ' >
         <div className="inicio " >
           <div className='typescript' >
             <Typewriter

@@ -14,10 +14,13 @@ import img_contact from '../images/contact.png'
 
 
 import Card from '../components/Card'
+import Navbar from '../components/Navbar'
 
 function ProyectosHtml() {
     return (
         <>
+      <Navbar />
+
             <div className='content'>
                 <h1 data-aos="fade-down">Diseños Sitios Html</h1>
                 <div className='cont-proyectos'>

@@ -75,6 +75,28 @@
     height: 100%;
 }
 
+.nav-item-boton{
+    background: crimson;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    height: 40px;
+    border-bottom: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.nav-item-boton .nav-links-boton{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-decoration: none;
+    padding: 15px 20px ;
+    height: 100%;
+    font-weight: bold;
+}
+
 .nav-links .icon_link{
     margin: 0 5px;
 }
@@ -86,6 +108,8 @@
 .menu-icon {
     display: none;
 }
+
+
 
 @media screen and (max-width: 960px) {
     

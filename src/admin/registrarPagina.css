@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    color: #fff;
+}
+
+.container h1 {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.home-categoria {
+    background: url(../images/fondo_notfound.svg) no-repeat center center/cover;
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-categoria h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.home-categoria .formulario {
+    width: 90%;
+    margin: auto;
+
+}
+
+.home-categoria form {
+    width: 70%;
+    margin: auto;
+    padding: 15px;
+    border: 2px solid crimson;
+    border-radius: 10px;
+}
+
+.home-categoria form .form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.home-categoria form label,
+.home-categoria form input,
+.home-categoria form .combobox {
+    width: 70%;
+    margin: 10px auto;
+    text-align: center;
+    display: block;
+    flex-direction: column;
+}
+
+.home-categoria form .combobox {
+    background: crimson;
+    border: none;
+    padding: 5px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.home-categoria form .combobox option {
+    background: #fff;
+    border: none;
+    padding: 10px;
+    color: #0f0f0f;
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+}
+
+.home-categoria form label {
+    font-size: 25px;
+}
+
+.home-categoria form input {
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid crimson;
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+}
+
+.home-categoria form .boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+
+}
+
+.home-categoria form .boton button {
+    cursor: pointer;
+    background: crimson;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-decoration: none;
+    padding: 15px 20px;
+    height: 100%;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 960px) {
+    .container h1 {
+        font-size: 25px;
+    }
+
+    .home-categoria form {
+        width: 90%;
+    }
+
+    .home-categoria form .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-categoria form label,
+    .home-categoria form input,
+    .home-categoria form .combobox {
+        width: 100%;
+    }
+}
