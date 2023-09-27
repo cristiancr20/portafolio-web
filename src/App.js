@@ -28,6 +28,7 @@ function App() {
         <Route path="/categorias/react" element={<ProyectosReact />} />
         <Route path="/sobre/mi" element={<Sobremi />} />
         <Route path="*" element={<NotFound />} />
+
       </Routes>
     </Router>
   );

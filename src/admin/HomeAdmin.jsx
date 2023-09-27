@@ -10,7 +10,6 @@ const HomeAdmin = () => {
             <Navbar />
 
             <div className="home-admin">
-
                 <h1>Bienvenido
                     <div className="typescript">
 
