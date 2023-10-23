@@ -1,7 +1,4 @@
-import axios from "axios";
-
-
-const API_URL = 'https://portafolio-backend-yoir-dev.fl0.io';
+const API_URL = 'https://portafolio-backend-dev-hbbt.2.ie-1.fl0.io';
 
 export const iniciarSesion = async (user) => {
     try {
