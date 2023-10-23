@@ -16,7 +16,7 @@ const ProyectosReact = () => {
 
 
     useEffect(() => {
-        fetch('https://portafolio-backend-yoir-dev.fl0.io/get/paginas')
+        fetch('https://portafolio-backend-dev-hbbt.2.ie-1.fl0.io/get/paginas')
             .then(response => response.json())
             .then(data => {
                 console.log('Datos obtenidos:', data);
