@@ -1,27 +1,25 @@
-import React from 'react'
-import './Card.css'
+import React from 'react';
 
-
-
-
-function Card(props) {
-    return (
-        <>
-            <a className='proyecto_card' data-aos="fade-up"  href={props.enlaceSitio}>
-                <div className='title'>{props.title}</div>
-
-                <div className='informacion_card'>
-                    <div className='imagen_card'>
-                        <img src={props.img} alt='img'></img>
-                    </div>
-
-                    <div className='info_card'>
-                        <p>{props.info}</p>
-                    </div>
-                </div>
-            </a>
-        </>
-    )
+function Card({ title, img, enlaceSitio }) {
+  return (
+    <a
+      href={enlaceSitio}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block bg-gray-800 text-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+      data-aos="fade-up"
+    >
+      <img
+        src={img}
+        alt={title}
+        className="w-full h-48 object-cover"
+      />
+      <div className="p-4">
+        <h3 className="text-xl font-semibold mb-2 " >{title}</h3>
+        <p className="text-gray-400">Visita el sitio</p>
+      </div>
+    </a>
+  );
 }
 
-export default Card
+export default Card;

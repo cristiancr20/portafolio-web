@@ -1,43 +1,38 @@
-import React from 'react'
-import './Inicio.css'
-import Typewriter from 'typewriter-effect'
+import React from "react";
+import Typewriter from "typewriter-effect";
 
-import Navbar from '../components/Navbar'
-
-
-function Inicio() {
+const Inicio = () => {
   return (
-    <>
-      <Navbar />
-
-      <div className='container ' >
-        <div className="inicio " >
-          <div className='typescript' >
-            <Typewriter
-              options={{
-                strings: ['Developer', 'Designer', 'Programmer'],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </div>
-          
-
-          <div className='inicio_cont'>
-            <div className='inicio_info'>
-
-              <div className="titulo" data-aos="zoom-out">
-                <h1 className='text-white'>Bienvenido!!</h1>
-                <h1 className='text-white'>Soy <span> Cristian Capa </span></h1>
-                <h2 className='text-white'>Estudiante de Ingeniería en Computación</h2>
-              </div>
-            </div>
-          </div>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white p-6 overflow-hidden rounded-lg">
+      <div className="text-center max-w-2xl">
+        <div className="text-4xl font-extrabold mb-6 text-gray-400">
+          <Typewriter
+            options={{
+              strings: [
+                "Desarrollador Web",
+                "Programador Junior",
+                "Amante de la Tecnología",
+                "Creador de Soluciones",
+                "Apasionado por el Código",
+                "Desarrollador de Interfaces",
+                "Entusiasta del Diseño",
+                "Innovador Digital",
+                "Desarrollador en Crecimiento"
+              ],
+              autoStart: true,
+              loop: true,
+              delay: 75,
+              cursor: "_",
+            }}
+          />
         </div>
+        <h1 className="text-4xl font-bold mb-4 text-yellow-300">¡Bienvenido a mi sitio!</h1>
+        <p className="text-xl mb-4">
+          Soy Cristian Capa, un apasionado desarrollador web. Aquí puedes encontrar algunos de mis proyectos y servicios.
+        </p>
       </div>
+    </div>
+  );
+};
 
-    </>
-  )
-}
-
-export default Inicio
+export { Inicio };

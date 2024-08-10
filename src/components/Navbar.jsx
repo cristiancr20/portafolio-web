@@ -1,60 +1,53 @@
-import React, { useState } from 'react'
-import { FaBars, FaTimes } from 'react-icons/fa'
-import { BiHomeAlt2, BiCategory, BiUser } from "react-icons/bi";
-import { Link } from 'react-router-dom';
-import './Navbar.css';
-import { IconContext } from 'react-icons/lib';
+import React, { useState } from 'react';
+import { FaBars, FaTimes,FaBuffer } from 'react-icons/fa';
+import { BiHomeAlt2, BiCategory } from "react-icons/bi";
 
+function Navbar({ activeSection, setActiveSection }) {
+    const [menuOpen, setMenuOpen] = useState(false);
 
-function Navbar() {
-    const [click, setClick] = useState(false);
+    const handleClick = (section) => {
+        setActiveSection(section);
+        setMenuOpen(false);  // Cerrar menú al hacer clic en un elemento
+    };
 
-    const handleClick = () => setClick(!click);
-    const closeMobileMenu = () => setClick(false);
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
 
     return (
-        <>
-            <IconContext.Provider value={{ color: '#fff' }}>
-                <div className='navbar'>
-
-                    <div className="navbar-container container">
-                        <Link to='/' className='navbar-logo'
-                            onClick={closeMobileMenu}>
-                            C.Code
-                        </Link>
-                        <div className='menu-icon' onClick={handleClick}>
-                            {click ? <FaTimes /> : <FaBars />}
-                        </div>
-
-                        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                            <li className='nav-item'>
-                                <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                                    <BiHomeAlt2 className='icon_link'/>  Inicio
-                                </Link>
-                            </li>
-                            <li className='nav-item'>
-                                <Link to='/categorias' className='nav-links' onClick={closeMobileMenu}>
-                                    <BiCategory className='icon_link'/> Categorías
-                                </Link>
-                            </li>
-                            <li className='nav-item'>
-                                <Link to='/sobre/mi' className='nav-links' onClick={closeMobileMenu}>
-                                    <BiUser className='icon_link'/> Sobre Mi
-                                </Link>
-                            </li>
-
-                            <button className='nav-item-boton'>
-                                <Link to='/admin/login' className='nav-links-boton' onClick={closeMobileMenu}>
-                                    ADMIN
-                                </Link>
-                            </button>
-                        </ul>
-                    </div>
+        <div className="bg-gray-800 text-white sticky top-0 w-full z-50">
+            <div className="flex items-center justify-between max-w-screen-lg mx-auto p-4">
+                {/* Título */}
+                <div className='text-2xl font-bold text-yellow-400'>
+                    {activeSection}
                 </div>
 
-            </IconContext.Provider>
-        </>
-    )
+                {/* Icono de Menú para móviles */}
+                <div className='lg:hidden cursor-pointer' onClick={toggleMenu}>
+                    {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+                </div>
+
+                {/* Menú */}
+                <ul className={`lg:flex lg:items-center lg:space-x-6 lg:static absolute top-16 left-0 w-full lg:w-auto bg-gray-900  shadow-lg lg:shadow-none p-5 lg:p-2  lg:m-0 rounded-lg transition-all duration-300 ease-in-out ${menuOpen ? 'left-0' : '-left-full'}`}>
+                    <li className='nav-item'>
+                        <button onClick={() => handleClick('Inicio')} className='flex items-center px-4 py-2 text-lg hover:bg-gray-700 w-full transition-colors rounded-lg'>
+                            <BiHomeAlt2 className='mr-2' size={20} /> Inicio
+                        </button>
+                    </li>
+                    <li className='nav-item'>
+                        <button onClick={() => handleClick('Proyectos')} className='flex items-center px-4 py-2 text-lg hover:bg-gray-700 w-full transition-colors rounded-lg'>
+                            <BiCategory className='mr-2' size={20} /> Proyectos
+                        </button>
+                    </li>
+                    <li className='nav-item'>
+                        <button onClick={() => handleClick('Historia')} className='flex items-center px-4 py-2 text-lg hover:bg-gray-700 w-full  transition-colors rounded-lg'>
+                            <FaBuffer className='mr-2 ' size={20} /> Historia
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    );
 }
 
 export default Navbar;
