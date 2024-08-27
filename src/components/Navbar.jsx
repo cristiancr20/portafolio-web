@@ -31,17 +31,17 @@ function Navbar({ activeSection, setActiveSection }) {
                 <ul className={`lg:flex lg:items-center lg:space-x-6 lg:static absolute lg:opacity-100 lg:translate-y-0 lg:pointer-events-auto top-16 left-0 w-full lg:w-auto bg-gray-900 shadow-lg lg:shadow-none p-5 lg:p-2 lg:m-0 rounded-lg transform transition-all duration-300 ease-in-out ${menuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-5 pointer-events-none'}`}>
                     <li className='nav-item'>
                         <button onClick={() => handleClick('Inicio')} className='flex items-center px-4 py-2 text-lg hover:bg-gray-700 w-full transition-colors rounded-lg'>
-                            <BiHomeAlt2 className='mr-2' size={20} /> Inicio
+                            <BiHomeAlt2 className='mr-2 text-yellow-400' size={20} /> Inicio
                         </button>
                     </li>
                     <li className='nav-item'>
                         <button onClick={() => handleClick('Proyectos')} className='flex items-center px-4 py-2 text-lg hover:bg-gray-700 w-full transition-colors rounded-lg'>
-                            <BiCategory className='mr-2' size={20} /> Proyectos
+                            <BiCategory className='mr-2 text-yellow-400' size={20} /> Proyectos
                         </button>
                     </li>
                     <li className='nav-item'>
                         <button onClick={() => handleClick('Historia')} className='flex items-center px-4 py-2 text-lg hover:bg-gray-700 w-full transition-colors rounded-lg'>
-                            <FaBuffer className='mr-2' size={20} /> Historia
+                            <FaBuffer className='mr-2 text-yellow-400' size={20} /> Historia
                         </button>
                     </li>
                 </ul>

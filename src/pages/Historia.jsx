@@ -85,18 +85,19 @@ function Historia() {
   return (
     <div className="min-h-screen bg-gray-900 text-white p-6 rounded-lg">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div data-aos="fade-up">
-          
-          <TimeLine data={educationData}  title="Educación" />
+        <div>
+          <TimeLine data={achievementsData} title="Logros"/>
         </div>
 
         <div>
           <TimeLine data={danceData} title="Grupo de Baile" />
         </div>
-
-        <div>
-          <TimeLine data={achievementsData} title="Logros"/>
+        
+        <div data-aos="fade-up">  
+          <TimeLine data={educationData}  title="Educación" />
         </div>
+
+
       </div>
     </div>
   );
